@@ -50,7 +50,7 @@ def layout(isbn=None):
     book = booksdf.loc[booksdf["isbn"] == isbn]
     snippet = htmlParser.unescape(book.iloc[0][15])
     summary = sumdf.loc[sumdf["isbn"] == isbn]
-    summary = htmlParser.unescape(summary.iloc[0][2])
+    summary = htmlParser.unescape(summary.iloc[0][3])
     wordcloud = str("/assets/" +book.iloc[0][3] + ".png")
     
     return dbc.Container([
