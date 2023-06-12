@@ -5,8 +5,7 @@ import plotly.graph_objects as go
 import plotly.express as px
 import pandas as pd
 import dash_bootstrap_components as dbc
-from src.components.layout import create_layout
-from getData import getData, getMembers, getBooks, getOverallAveragePerMember, getOverallAveragesPerBook
+from getData import getData, getOverallAveragePerMember, getOverallAveragesPerBook
 import plotly.express as px
 
 
