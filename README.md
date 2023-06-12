@@ -25,7 +25,7 @@ The cover images and text snippets are being collected through the Google Book A
 
 The reviews that are being used for the wordcloud and average summary on the book details pages are scraped from [GoodReads.com](http://GoodReads.com) using the Goodreads ID. 
 
-## Challenges with this project:
+## Challenges with this project
 
 - The Google book API doesn’t always deliver flawless information. Pages and Original release date aren’t always accurate. Therefore these details need to be filled in manually in the Google sheet. 
 - Dash does not offer a way to create a timeline in such a way that is useful for this particular project. Therefore, I had to use Matplotlib, which has its implications when using it in an interactive dashboard. 
