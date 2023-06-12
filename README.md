@@ -18,20 +18,21 @@ This project is built with Python and using the following techniques, frameworks
 ## Where the data in this project is coming from
 
 Information about the books and the scores given to every book are stored in a Google Sheet as shown below. 
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+<img src="./docs/Gsheet1.png" width="700">
+<img src="./docs/Gsheet2.png" width="700">
 
 The cover images and text snippets are being collected through the Google Book API, using the ISBN. 
 
-The reviews that are being used for the wordcloud and average summary on the book details pages are scraped from [GoodReads.com](http://GoodReads.com) using the Goodreads identifyer. 
+The reviews that are being used for the wordcloud and average summary on the book details pages are scraped from [GoodReads.com](http://GoodReads.com) using the Goodreads ID. 
 
 ## Challenges with this project:
 
 - The Google book API doesn’t always deliver flawless information. Pages and Original release date aren’t always accurate. Therefore these details need to be filled in manually in the Google sheet. 
-- Dash does not offer a way to create a timeline in such a way that is useful for this particular project. Therefore I had to use Matplotlib, which has its implications when using it in an interactive dashboard. 
+- Dash does not offer a way to create a timeline in such a way that is useful for this particular project. Therefore, I had to use Matplotlib, which has its implications when using it in an interactive dashboard. 
 
 ## Room for improvement
 - Writing a script that automatically scrapes the Goodreads identifier, based on the ISBN.
-- Using Lambda, writing a function that gets triggered every time a new book, or new scores have been added to the Google Sheet.
+- Using Lambda, writing a function that gets triggered every time a new book or new scores have been added to the Google Sheet.
 - More meaningful information in the tooltips
 
 ## Future development ideas
