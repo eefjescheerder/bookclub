@@ -417,7 +417,7 @@ def update_rec_pie_charts(Member):
 
     if not Member:
         recPieData = scoresdf 
-        name = "We"
+        name = "we"
         titletext = "How often do %s recommend a book?"
     else:
         recPieData = scoresdf[scoresdf["member"] == Member]
@@ -434,10 +434,10 @@ def update_rec_pie_charts(Member):
     for i in range(len(recList)):
     
         if recList[i] == 'N':
-            recList[i] = notFinishTemplate % (name)
+            recList[i] = notFinishTemplate % (name.capitalize())
             
         if recList[i] == 'Y':
-            recList[i] = finishTemplate % (name)
+            recList[i] = finishTemplate % (name.capitalize())
             
     recPie.update(data=[go.Pie(labels=recList, values=recCountList)])
     recPie.update_layout(title_text=titletext % name)

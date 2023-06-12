@@ -68,7 +68,7 @@ def layout(isbn=None):
             dbc.Card(
                 dbc.CardBody([
                     #Summary
-                    generate_tooltip("This is an automatically generated summary from all Goodreads reviews. All scraped reviews have been translated into English first.", "summary"),
+                    generate_tooltip("This is a computer generated summary based on all Goodreads reviews. The scraped reviews have been translated into English first.", "summary"),
                     dbc.CardBody(summary)
                 ])  
             ),

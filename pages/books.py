@@ -24,7 +24,7 @@ scoresdf = data["scoresdf"]
 bookList = getBooks(booksdf)
 
 fontDict = dict(
-        family="Courier New, monospace",
+        family="monospace",
         size=14,
         color="white"
     )
@@ -141,7 +141,7 @@ label_offsets = np.zeros(len(yearList))
 label_offsets[::2] = 0.35
 label_offsets[1::2] = -0.7
 for i, (l, d) in enumerate(zip(titleList, yearList)):
-    _ = ax.text(d, label_offsets[i], l, ha='center', rotation = 50, fontfamily='Courier New', fontweight='bold', color='white',fontsize=10)
+    _ = ax.text(d, label_offsets[i], l, ha='center', rotation = 50, fontfamily='monospace', fontweight='bold', color='white',fontsize=10)
 
 stems = np.zeros(len(yearList))
 stems[::2] = 0.3
@@ -161,7 +161,7 @@ ax.set_facecolor('#002b36')
 
 _ = ax.tick_params(axis='x', color="white", labelcolor="white")
 
-_ = ax.set_title('Original release date', fontweight="bold", fontfamily='Courier New', fontsize=16, 
+_ = ax.set_title('Original release date', fontweight="bold", fontfamily='monospace', fontsize=16, 
                  color='white')
 plt.savefig('timeLine.png')
 
@@ -179,7 +179,7 @@ pagesBar = px.bar(booksdf, y='pages', x='title', text_auto='.2s',
             color="title")
 pagesBar.update_traces(textfont_size=12, textangle=0, textposition="outside", cliponaxis=False)
 pagesBar.update_layout(xaxis={'categoryorder':'total ascending', 'visible':True}, xaxis_title="", yaxis={'visible':False}, title_font_color="white",  font=dict(
-        family="Courier New, monospace",
+        family="monospace",
         size=14,
         color="white"
     ))
