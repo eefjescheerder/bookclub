@@ -1,5 +1,7 @@
 # Book club
 
+DEMO: https://bookclub.eefjescheerder.nl/ 
+
 I created this page as a hobby project for my book club. 
 
 This project is built with Python and using the following techniques, frameworks and libraries: 
