@@ -66,13 +66,13 @@ layout = dbc.Container([
         [
             html.Span(
                 html.H1("?"), 
-                id="quest-mark"         
+                id="quest-mark",
+                style={"color": "lightsalmon"}         
                     ),
                     dbc.Tooltip(
                     """Click on a cover to see more information about the book.""",
                     target="quest-mark"
             ),
- 
         ],
         style={
             "position": "absolute", 

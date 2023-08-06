@@ -62,7 +62,8 @@ layout = dbc.Container([
         [
             html.Span(
                 html.H1("?"), 
-                id="quest-mark"         
+                id="quest-mark", 
+                style={"color": "lightsalmon"}              
                     ),
                     dbc.Tooltip(
                     "This page shows all of the books that none of us would recommend. Click on a books image for more information about the book.",

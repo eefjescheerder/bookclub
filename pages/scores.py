@@ -67,7 +67,7 @@ cards = dbc.CardGroup(
             dbc.Card(
                 dbc.CardBody(
                     [
-                        generate_tooltip("This represents the member that gave the lowest scores on all books on all categories on average.", "cardPosMember"),
+                        generate_tooltip("This represents the member that gave the highest scores on all books on all categories on average.", "cardPosMember"),
                         html.H4("Most Positive member is"),
                         html.H1(overallAveragePerMember.keys()[-1:])
                     ]
@@ -411,7 +411,7 @@ def update_charts(Member):
 )
 def update_rec_pie_charts(Member):
     finishTemplate = "%s would recommend a book"
-    notFinishTemplate = "%s would not recommend a boek"
+    notFinishTemplate = "%s would not recommend a book"
     recPieData = False
 
     if not Member:
